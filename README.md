@@ -33,7 +33,7 @@ aws dynamodb create-table \
 ```
 
 ##### 3. Initiating the terraform environment #####
-The commands below create ``.terraform`` folder in the project&apos;s terraform folder, downloading all providers binary files besides to set in a aws bucket as common place to store terraform.state file, and defining a DynamoDB table as the locker for sure that the team is sharing the same terraform state. During this process a warning question is going to made, asking whether you&apos;re aware that the when initiating the terraform.tfstate will placed into the defined S3 bucket, so just type "yes".
+The commands below create ``.terraform`` folder in the project&apos;s terraform folder, downloading all providers&apos; binary files, besides to set up an aws bucket as a common place to store terraform.state file, and defining a DynamoDB table as the locker to ensure the team shares the same terraform state. During this process, a warning question will ask whether you&apos;re aware that when initiating the terraform.tfstate file will be placed into the defined S3 bucket (defined in step 1), so just type "yes".
 ```shell
 cd terraform && terraform init
 ```
